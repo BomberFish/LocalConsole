@@ -1031,7 +1031,7 @@ public class LCManager: NSObject, UIGestureRecognizerDelegate {
         }
         
         let forceCrashApplication = UIAction(title: "Force Crash App", image: UIImage(systemName: "exclamationmark.octagon.fill"), attributes: .destructive) { _ in
-            fatalError()
+            fatalError("Manually Triggered from LocalConsole")
         }
         
         // This might be redundant, controlconfig already has respring function
